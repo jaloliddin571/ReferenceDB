@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#2196F3"
+    android:padding="10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:padding="15dp"
+        android:background="@drawable/orqa_fon"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/edt_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:background="@drawable/orqa_fon"
+        android:inputType="phone"
+        android:visibility="gone"
+        android:id="@+id/edt_number"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textSize="20sp"
+        android:background="@drawable/orqa_fon"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColorHint="@color/white"
+        android:visibility="gone"
+        android:id="@+id/edt_address"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:outlineSpotShadowColor="@color/white"
+        android:id="@+id/spinner_employee"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/spinner_customer"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="#2196F3"
+        android:text="Save"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp"/>
+
+
+
+
+
+</LinearLayout>

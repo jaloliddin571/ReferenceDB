@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#3F51B5"
+    tools:context=".ui.HomeFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_employee"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#16FFFFFF"
+        android:text="EMPLOYEE"
+        android:textSize="30sp"
+        android:textColor="#EC0808"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        android:layout_gravity="center"
+        app:strokeColor="@color/white"
+        app:strokeWidth="5dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_customer"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#16FFFFFF"
+        android:text="CUSTOMER"
+        android:textSize="30sp"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="5dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_orders"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#16FFFFFF"
+        android:text="ORDERS"
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:textColor="#21F30A"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="5dp"/>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.referencedb.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_customerFragment"
+            app:destination="@id/customerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_ordersFaragment"
+            app:destination="@id/ordersFaragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_employeeFragment2"
+            app:destination="@id/employeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeFragment"
+        android:name="com.example.referencedb.ui.EmployeeFragment"
+        android:label="fragment_employee"
+        tools:layout="@layout/fragment_employee" />
+    <fragment
+        android:id="@+id/customerFragment"
+        android:name="com.example.referencedb.ui.CustomerFragment"
+        android:label="CustomerFragment"
+        tools:layout="@layout/fragment_employee"/>
+    <fragment
+        android:id="@+id/ordersFaragment"
+        android:name="com.example.referencedb.ui.OrdersFaragment"
+        android:label="OrdersFaragment"
+        tools:layout="@layout/fragment_employee"/>
+</navigation>
